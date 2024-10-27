@@ -41,7 +41,10 @@ void upperString(char *string) {
     }    
 }
  // function to compare the strings.
-
+int compare(char *string1, char *string2) {
+      if (strcmp(string1,string2 ) == 0)    return 1;
+  return 0;
+}
 
 int lengthOfString(char *name) {
     int length = 0;
