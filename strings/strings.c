@@ -13,10 +13,10 @@ void copyString(char *source, char *dest);
     char name[] = "Kevin";
     char nameCopy[32];
 
-    // printf("%c\n",toupper(name[1]));
-    // printString(name);
-    // copyString(name, nameCopy);
-    // printString(nameCopy);
+    printf("%c\n",toupper(name[1]));
+    printString(name);
+    copyString(name, nameCopy);
+    printString(nameCopy);
     upperString(name);
     printString(name);
     return 0;
