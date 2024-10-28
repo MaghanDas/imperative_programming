@@ -2,25 +2,29 @@
 #include<ctype.h>
 #include<string.h>
 
-// function declaration, working with strings
+// functions declarations to work with the strings!!
 void printString(char *);
 void upperString(char *string);
 int compare(char string1[], char string2[]);
 void copyString(char *source, char *dest);
+int lengthOfString(char *name); 
 
+// main method starts here.
  int main() {
 
     char name[] = "Kevin";
     char nameCopy[32];
-
-    printf("%c\n",toupper(name[1]));
-    printString(name);
-    copyString(name, nameCopy);
-    printString(nameCopy);
-    upperString(name);
-    printString(name);
+    
+    // printf("%c\n",toupper(name[1]));
+    // printString(name);
+    // copyString(name, nameCopy);
+    // printString(nameCopy);
+    // upperString(name);
+    // printString(name);
+    printf("%d", lengthOfString(name));
     return 0;
- }
+
+ }  // main method ends here
 
 // function to print the string...
 void printString(char *string) {
@@ -42,13 +46,13 @@ void upperString(char *string) {
 }
  // function to compare the strings.
 int compare(char *string1, char *string2) {
-      if (strcmp(string1,string2 ) == 0)    return 1;
+
   return 0;
 }
-
+ // functions to find the length of a string.
 int lengthOfString(char *name) {
     int length = 0;
-    for (int i = 0; i != '\0'; i++){
+    for (int i = 0; name[i] != '\0'; i++){
         length++;
     }
     return length;
